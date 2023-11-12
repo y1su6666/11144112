@@ -1,3 +1,8 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
     background-color: #eee4e1;
     margin: 0px;
@@ -5,14 +10,6 @@ body {
 
 * {
     box-sizing: border-box;
-}
-
-header {
-    background-color: #e7d8c9;
-    color: #463f3a;
-    text-align: center;
-    margin: 0px;
-    padding: 10px;
 }
 
 nav {
@@ -42,6 +39,20 @@ main {
     padding: 20px;
 }
 
+.card1 {
+    display: flex;
+    background-color: #e7d8c9;
+}
+
+.l {
+    width: 30%;
+}
+
+.r {
+    width: 70%;
+    margin-top: 60px;
+}
+
 .personal {
     font-size: 30px;
     color: #463f3a;
@@ -54,31 +65,35 @@ main {
     font-family: Arial;
 }
 
-img {
-    width: 80px;
-    height: 150px;
-    padding-top: 10%;
-}
-
-.bottom {
-    background-color: #e7d8c9;
-    margin: 20px 10px;
-    padding: 10px;
-}
-
-article {
-    float: left;
-    width: 53%;
+.myphoto {
+    width: 150px;
+    height: 200px;
+    margin-left: 30px;
 }
 
 .name {
     font-size: 20px;
     font-family: 標楷體;
-    float: right;
 }
 
 .birthday {
     font-size: 20px;
     font-family: Arial;
-    float: right;
+    margin-top: 20px;
+}
+
+.school {
+    font-size: 20px;
+    font-family: Arial;
+    margin-top: 20px;
+}
+
+.slogan {
+    font-size: 20px;
+    font-family: 標楷體;
+    margin-top: 20px;
+}
+
+.card2 {
+    background-color: #D9D4CF;
 }
