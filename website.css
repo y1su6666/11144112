@@ -97,3 +97,186 @@ main {
 .card2 {
     background-color: #D9D4CF;
 }
+
+.card3 {
+    background-color: #D9D4CF;
+}
+
+.skillsbar li {
+    list-style: none;
+    position: relative;
+    font-size: 18px;
+    border-radius: 30px;
+    font-family: 標楷體;
+    margin-bottom: 30px;
+}
+
+.skillsbar li::before,
+.skillsbar li::after {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: -35px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.skillsbar li::before {
+    box-shadow: 0 0 6px #D9D4CF;
+}
+
+
+.skillsbar li::after {
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.video::after {
+    animation-name: video;
+}
+
+.word ::after {
+    animation-name: word;
+}
+
+.ppt::after {
+    animation-name: ppt;
+}
+
+@keyframes video {
+    from {
+        width: 0%;
+        background-color: #D9D4CF;
+    }
+
+    to {
+        width: 85%;
+        background-color: plum;
+    }
+}
+
+@keyframes word {
+    from {
+        width: 0%;
+        background-color: #D9D4CF;
+    }
+
+    to {
+        width: 70%;
+        background-color: plum;
+    }
+}
+
+@keyframes ppt {
+    from {
+        width: 0%;
+        background-color: #D9D4CF;
+    }
+
+    to {
+        width: 80%;
+        background-color: plum;
+    }
+}
+
+
+.circle {
+    --width: 200px;
+    --percent: 60;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px auto;
+    background-image: conic-gradient(red var(--deg), #ccc var(--deg));
+    position: relative;
+}
+
+.circle-inside {
+    --bar-width: 30px;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #eee;
+    width: calc(var(--width) - var(--bar-width));
+    height: calc(var(--width) - var(--bar-width));
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.p1 {
+    width: 10%;
+}
+
+.text1 {
+    font-size: 20px;
+}
+
+.p2 {
+    width: 10%;
+}
+
+.text2 {
+    font-size: 20px;
+}
+
+.p3 {
+    width: 10%;
+}
+
+.text3 {
+    font-size: 20px;
+}
+
+.p4 {
+    width: 10%;
+}
+
+.text4 {
+    font-size: 20px;
+}
+
+.card4 {
+    background-color: #D9D4CF;
+    display: flex;
+}
+
+.pj1 {
+    padding-top: 1%;
+    padding-left: 3%;
+}
+
+.pj1-1 {
+    width: 30%;
+    float: left;
+}
+
+.pj1-2 {
+    width: 60%;
+    float: right;
+}
+
+.photo1 {
+    width: 150px;
+    height: 200px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.photo1 {
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+}
+
+.photo1:hover {
+    transform: scale(1.2, 1.2);
+}
