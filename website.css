@@ -29,6 +29,13 @@ nav a:hover {
     color: #723d46;
 }
 
+.list {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    margin-bottom: -4px;
+}
+
 footer {
     color: #463f3a;
     text-align: center;
@@ -69,6 +76,9 @@ main {
     width: 150px;
     height: 200px;
     margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: 5px black;
 }
 
 .name {
@@ -100,6 +110,19 @@ main {
 
 .card3 {
     background-color: #D9D4CF;
+    padding-bottom: 30px;
+}
+
+.skillsbar {
+    width: 70%;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+
+.skillsbar p {
+    text-align: center;
+    padding: 10px;
+    width: 50px;
 }
 
 .skillsbar li {
@@ -108,7 +131,7 @@ main {
     font-size: 18px;
     border-radius: 30px;
     font-family: 標楷體;
-    margin-bottom: 30px;
+    margin: 48px 0;
 }
 
 .skillsbar li::before,
@@ -128,7 +151,6 @@ main {
     box-shadow: 0 0 6px #D9D4CF;
 }
 
-
 .skillsbar li::after {
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -140,7 +162,7 @@ main {
     animation-name: video;
 }
 
-.word ::after {
+.word::after {
     animation-name: word;
 }
 
@@ -151,98 +173,75 @@ main {
 @keyframes video {
     from {
         width: 0%;
-        background-color: #D9D4CF;
+        background-color: #79a8a9;
     }
 
     to {
         width: 85%;
-        background-color: plum;
+        background-color: #3b8686;
     }
 }
 
 @keyframes word {
     from {
         width: 0%;
-        background-color: #D9D4CF;
+        background-color: #79a8a9;
     }
 
     to {
         width: 70%;
-        background-color: plum;
+        background-color: #3b8686;
     }
 }
 
 @keyframes ppt {
     from {
         width: 0%;
-        background-color: #D9D4CF;
+        background-color: #79a8a9;
     }
 
     to {
         width: 80%;
-        background-color: plum;
+        background-color: #3b8686;
     }
 }
 
-
-.circle {
-    --width: 200px;
-    --percent: 60;
-    --deg: calc(360deg * calc(var(--percent) / 100));
-    width: var(--width);
-    height: var(--width);
-    border-radius: 50%;
-    margin: 0px auto;
-    background-image: conic-gradient(red var(--deg), #ccc var(--deg));
-    position: relative;
-}
-
-.circle-inside {
-    --bar-width: 30px;
-    position: absolute;
-    display: flex;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background: #eee;
-    width: calc(var(--width) - var(--bar-width));
-    height: calc(var(--width) - var(--bar-width));
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
+.p {
+    width: 30%;
 }
 
 .p1 {
-    width: 10%;
+    width: 40%;
 }
 
-.text1 {
-    font-size: 20px;
+.back {
+    justify-content: space-around;
+    display: flex;
+    margin: 30px;
+    margin-left: 90px;
 }
 
-.p2 {
-    width: 10%;
+.back h3 {
+    color: #723d46;
+    margin-left: 50px;
 }
 
-.text2 {
-    font-size: 20px;
-}
-
-.p3 {
-    width: 10%;
-}
-
-.text3 {
-    font-size: 20px;
-}
-
-.p4 {
-    width: 10%;
-}
-
+.text1,
+.text2,
+.text3,
 .text4 {
     font-size: 20px;
+    font-family: 標楷體;
+}
+
+.mchps,
+.khjh,
+.cjhs,
+.cycu {
+    width: 150px;
+    height: 200px;
+    margin-top: 80px;
+    margin-right: 110px;
 }
 
 .card4 {
@@ -253,6 +252,8 @@ main {
 .pj1 {
     padding-top: 1%;
     padding-left: 3%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .pj1-1 {
@@ -261,7 +262,7 @@ main {
 }
 
 .pj1-2 {
-    width: 60%;
+    width: 50%;
     float: right;
 }
 
@@ -272,11 +273,60 @@ main {
     overflow: hidden;
 }
 
-.photo1 {
+.pj2-1 {
+    width: 30%;
+    float: left;
+}
+
+.pj2-2 {
+    width: 50%;
+    float: right;
+}
+
+.photo2 {
+    width: 150px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.pj3-1 {
+    width: 30%;
+    float: left;
+}
+
+.pj3-2 {
+    width: 50%;
+    float: right;
+}
+
+.photo3 {
+    width: 150px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.photo1,
+.photo2,
+.photo3 {
     transform: scale(1, 1);
     transition: all 1s ease-out;
 }
 
-.photo1:hover {
+.photo1:hover,
+.photo2:hover,
+.photo3:hover {
     transform: scale(1.2, 1.2);
+}
+
+.pro {
+    width: 30%;
+}
+
+.pro1 {
+    width: 40%;
+    margin-top: 100px;
 }
