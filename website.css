@@ -1,6 +1,8 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+
 }
 
 body {
@@ -8,8 +10,8 @@ body {
     margin: 0px;
 }
 
-* {
-    box-sizing: border-box;
+section {
+    padding: 10px;
 }
 
 nav {
@@ -23,6 +25,7 @@ nav a {
     color: black;
     padding: 14px 16px;
     display: inline-block;
+    font-family: Comic Sans MS;
 }
 
 nav a:hover {
@@ -48,7 +51,8 @@ main {
 
 .card1 {
     display: flex;
-    background-color: #e7d8c9;
+    background-color: #d6ccc2;
+    padding: 10px;
 }
 
 .l {
@@ -57,14 +61,30 @@ main {
 
 .r {
     width: 70%;
-    margin-top: 60px;
+    margin-top: 100px;
+
 }
+
+.introduce1 {
+    /*border-style: solid;*/
+    width: 50%;
+
+}
+
+.introduce2 {
+    /*border-style: solid;*/
+    width: 40%;
+
+}
+
 
 .personal {
     font-size: 30px;
     color: #463f3a;
-    font-family: 標楷體;
+    font-family: 'Noto Serif TC', serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
 
 .about {
     font-size: 15px;
@@ -73,12 +93,12 @@ main {
 }
 
 .myphoto {
-    width: 150px;
-    height: 200px;
-    margin-left: 30px;
+    width: 200px;
+    height: 260px;
+    margin-left: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-style: 5px black;
+    /*border-style: 5px black;*/
 }
 
 .name {
@@ -89,10 +109,27 @@ main {
 .birthday {
     font-size: 20px;
     font-family: Arial;
-    margin-top: 20px;
 }
 
 .school {
+    font-size: 20px;
+    font-family: Arial;
+    margin-top: 20px;
+}
+
+.hobby {
+    font-size: 20px;
+    font-family: Arial;
+    margin-top: 20px;
+}
+
+.address {
+    font-size: 20px;
+    font-family: Arial;
+    margin-top: 20px;
+}
+
+.me {
     font-size: 20px;
     font-family: Arial;
     margin-top: 20px;
@@ -104,19 +141,176 @@ main {
     margin-top: 20px;
 }
 
+.r1 {
+    display: flex;
+}
+
+.r3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.r3p {
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+}
+
 .card2 {
     background-color: #D9D4CF;
+    padding: 10px;
 }
 
 .card3 {
-    background-color: #D9D4CF;
+    background-color: #d6ccc2;
     padding-bottom: 30px;
+    padding: 10px;
 }
+
+.pie {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -60px;
+    margin-left: -40px;
+}
+
+.word {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    background: #d9d7da;
+    border-radius: 50%;
+
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3,
+.circle-wrap .circle .fill-4 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #ACACAC;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+/* color animation */
+
+.mask .fill-1,
+.mask .fill-2,
+.mask .fill-3,
+.mask .fill-4 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #285e72;
+}
+
+.mask.full-1,
+.circle .fill-1 {
+    animation: fill-1 ease-in-out 3s;
+    transform: rotate(108deg);
+    animation-iteration-count: infinite;
+}
+
+.mask.full-2,
+.circle .fill-2 {
+    animation: fill-2 ease-in-out 3s;
+    transform: rotate(90deg);
+    animation-iteration-count: infinite;
+}
+
+.mask.full-3,
+.circle .fill-3 {
+    animation: fill-3 ease-in-out 3s;
+    transform: rotate(126deg);
+    animation-iteration-count: infinite;
+}
+
+.mask.full-4,
+.circle .fill-4 {
+    animation: fill-4 ease-in-out 3s;
+    transform: rotate(117deg);
+    animation-iteration-count: infinite;
+}
+
+@keyframes fill-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(108deg);
+    }
+}
+
+@keyframes fill-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes fill-3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(126deg);
+    }
+}
+
+@keyframes fill-4 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(117deg);
+    }
+}
+
+
 
 .skillsbar {
     width: 70%;
     margin-top: -30px;
-    margin-left: 30px;
+    margin-left: 200px;
 }
 
 .skillsbar p {
@@ -162,8 +356,8 @@ main {
     animation-name: video;
 }
 
-.word::after {
-    animation-name: word;
+.word1::after {
+    animation-name: word1;
 }
 
 .ppt::after {
@@ -173,24 +367,24 @@ main {
 @keyframes video {
     from {
         width: 0%;
-        background-color: #79a8a9;
+        background-color: #d9ae94;
     }
 
     to {
         width: 85%;
-        background-color: #3b8686;
+        background-color: #797d62;
     }
 }
 
-@keyframes word {
+@keyframes word1 {
     from {
         width: 0%;
-        background-color: #79a8a9;
+        background-color: #e0b1cb;
     }
 
     to {
         width: 70%;
-        background-color: #3b8686;
+        background-color: #9f86c0;
     }
 }
 
@@ -208,104 +402,183 @@ main {
 
 .p {
     width: 30%;
+    /*border-style: solid;*/
 }
 
 .p1 {
-    width: 40%;
+    width: 100%;
+    height: 350px;
+    /*border-style: solid;*/
 }
 
 .back {
+    position: relative;
     justify-content: space-around;
     display: flex;
-    margin: 30px;
-    margin-left: 90px;
+    height: 250px;
+    width: 100%;
 }
 
-.back h3 {
-    color: #723d46;
-    margin-left: 50px;
+.back2 {
+    width: 100%;
 }
 
-.text1,
-.text2,
-.text3,
-.text4 {
-    font-size: 20px;
+.t1 {
+    display: flex;
+}
+
+.s1 {
+    margin-left: 30px;
+}
+
+.s2 {
+    margin-left: 200px;
+}
+
+.s3 {
+    margin-left: 200px;
+}
+
+.s4 {
+    margin-left: 180px;
+}
+
+.s1t {
     font-family: 標楷體;
+    text-align: center;
 }
 
-.mchps,
-.khjh,
-.cjhs,
-.cycu {
-    width: 150px;
+.card5 {
+    background-color: #D9D4CF;
+    padding: 10px;
+}
+
+.pics {
+    position: relative;
+    /*border-style: solid;*/
+    width: 300px;
+}
+
+.pics img {
+    justify-content: center;
+    position: absolute;
+    /* 淡出淡入效果2秒 */
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    width: 200px;
     height: 200px;
-    margin-top: 80px;
-    margin-right: 110px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.pics img:last-child:hover {
+    /* 滑入時第一張透明度設0 */
+    opacity: 0;
 }
 
 .card4 {
-    background-color: #D9D4CF;
-    display: flex;
+    background-color: #d6ccc2;
+    padding: 10px;
 }
 
 .pj1 {
-    padding-top: 1%;
-    padding-left: 3%;
-    margin-right: 5%;
-    margin-left: 5%;
+    display: flex;
+    border-style: dashed;
+    /*background-color: gray;*/
+    border-radius: 30px;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .pj1-1 {
-    width: 30%;
-    float: left;
+    width: 40%;
 }
 
 .pj1-2 {
     width: 50%;
-    float: right;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.pj1-2 .title1,
+.pj2-2 .title1,
+.pj3-2 .title1 {
+    font-family: 標楷體;
+    font-size: 20px;
+}
+
+.text1 {
+    margin-top: 10px;
+}
+
+.text2 {
+    font-family: Comic Sans MS;
 }
 
 .photo1 {
-    width: 150px;
+    width: 300px;
     height: 200px;
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 
+.pj2 {
+    border-style: dashed;
+    display: flex;
+
+    border-radius: 30px;
+    width: 100%;
+    margin-bottom: 50px;
+    flex-direction: row-reverse;
+}
+
 .pj2-1 {
-    width: 30%;
-    float: left;
+    width: 40%;
 }
 
 .pj2-2 {
     width: 50%;
-    float: right;
+    margin-top: 20px;
 }
 
 .photo2 {
-    width: 150px;
+    width: 300px;
     height: 200px;
-    margin-left: 10px;
-    margin-top: 150px;
+    margin-left: -30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     overflow: hidden;
+}
+
+.pj3 {
+    border-style: dashed;
+    display: flex;
+
+    border-radius: 30px;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .pj3-1 {
     width: 30%;
-    float: left;
 }
 
 .pj3-2 {
-    width: 50%;
-    float: right;
+    width: 60%;
+    margin-left: 60px;
+    margin-top: 10px;
 }
 
 .photo3 {
-    width: 150px;
+    width: 250px;
     height: 200px;
-    margin-left: 10px;
-    margin-top: 150px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 
@@ -327,6 +600,6 @@ main {
 }
 
 .pro1 {
-    width: 40%;
-    margin-top: 100px;
+    margin-top: 60px;
+    padding-bottom: 30px;
 }
