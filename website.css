@@ -2,16 +2,16 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-
 }
 
 body {
-    background-color: #eee4e1;
-    margin: 0px;
+    background-image: url(photo/back.jpg);
+    background-attachment: fixed;
 }
 
 section {
-    padding: 10px;
+    padding: -5em;
+    margin: 2em auto;
 }
 
 nav {
@@ -62,26 +62,21 @@ main {
 .r {
     width: 70%;
     margin-top: 100px;
-
 }
 
 .introduce1 {
-    /*border-style: solid;*/
     width: 50%;
-
 }
 
 .introduce2 {
-    /*border-style: solid;*/
     width: 40%;
-
 }
-
 
 .personal {
     font-size: 30px;
     color: #463f3a;
     font-family: 'Noto Serif TC', serif;
+    font-weight: bold;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
@@ -89,7 +84,8 @@ main {
 .about {
     font-size: 15px;
     color: #463f3a;
-    font-family: Arial;
+    font-family: 'Noto Serif TC', serif;
+
 }
 
 .myphoto {
@@ -98,47 +94,54 @@ main {
     margin-left: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 30px;
     /*border-style: 5px black;*/
 }
 
 .name {
     font-size: 20px;
-    font-family: 標楷體;
+    font-family: 'Noto Serif TC', serif;
 }
 
 .birthday {
     font-size: 20px;
-    font-family: Arial;
+    font-family: 'Dancing Script';
 }
 
 .school {
     font-size: 20px;
-    font-family: Arial;
+    font-family: 'Dancing Script';
     margin-top: 20px;
 }
 
 .hobby {
     font-size: 20px;
-    font-family: Arial;
+    font-family: 'Noto Serif TC', serif;
     margin-top: 20px;
 }
 
 .address {
     font-size: 20px;
-    font-family: Arial;
+    font-family: 'Dancing Script';
     margin-top: 20px;
 }
 
 .me {
     font-size: 20px;
-    font-family: Arial;
     margin-top: 20px;
+    font-family: 'Noto Serif TC', serif;
 }
 
 .slogan {
     font-size: 20px;
-    font-family: 標楷體;
+    font-family: 'Noto Serif TC', serif;
     margin-top: 20px;
+}
+
+.mbti {
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Noto Serif TC', serif;
 }
 
 .r1 {
@@ -153,7 +156,9 @@ main {
 .r3p {
     width: 60px;
     height: 60px;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 70px;
 }
 
 .card2 {
@@ -227,7 +232,7 @@ main {
     font-size: 2em;
 }
 
-/* color animation */
+/* 指定 color animation */
 
 .mask .fill-1,
 .mask .fill-2,
@@ -305,8 +310,6 @@ main {
     }
 }
 
-
-
 .skillsbar {
     width: 70%;
     margin-top: -30px;
@@ -319,12 +322,16 @@ main {
     width: 50px;
 }
 
+h3 {
+    display: inline;
+}
+
 .skillsbar li {
     list-style: none;
     position: relative;
     font-size: 18px;
     border-radius: 30px;
-    font-family: 標楷體;
+    font-family: 'Noto Serif TC', serif;
     margin: 48px 0;
 }
 
@@ -402,13 +409,11 @@ main {
 
 .p {
     width: 30%;
-    /*border-style: solid;*/
 }
 
 .p1 {
     width: 100%;
     height: 350px;
-    /*border-style: solid;*/
 }
 
 .back {
@@ -417,10 +422,7 @@ main {
     display: flex;
     height: 250px;
     width: 100%;
-}
-
-.back2 {
-    width: 100%;
+    margin-top: 20px;
 }
 
 .t1 {
@@ -429,23 +431,28 @@ main {
 
 .s1 {
     margin-left: 30px;
+    font-family: 'Noto Serif TC', serif;
 }
 
 .s2 {
     margin-left: 200px;
+    font-family: 'Noto Serif TC', serif;
 }
 
 .s3 {
     margin-left: 200px;
+    font-family: 'Noto Serif TC', serif;
 }
 
 .s4 {
     margin-left: 180px;
+    font-family: 'Noto Serif TC', serif;
 }
 
 .s1t {
-    font-family: 標楷體;
+    font-family: 'Noto Serif TC', serif;
     text-align: center;
+    margin-bottom: 3px;
 }
 
 .card5 {
@@ -455,14 +462,13 @@ main {
 
 .pics {
     position: relative;
-    /*border-style: solid;*/
     width: 300px;
 }
 
 .pics img {
     justify-content: center;
     position: absolute;
-    /* 淡出淡入效果2秒 */
+    /* 淡出淡入效果1秒 */
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
@@ -473,8 +479,8 @@ main {
     margin-top: 20px;
 }
 
+/* 滑入時第一張透明度設0 */
 .pics img:last-child:hover {
-    /* 滑入時第一張透明度設0 */
     opacity: 0;
 }
 
@@ -485,32 +491,32 @@ main {
 
 .pj1 {
     display: flex;
-    border-style: dashed;
-    /*background-color: gray;*/
     border-radius: 30px;
     width: 100%;
     margin-bottom: 50px;
 }
 
 .pj1-1 {
-    width: 40%;
+    width: 50%;
+    margin-left: 60px;
 }
 
 .pj1-2 {
     width: 50%;
-    margin-left: 40px;
+    margin-left: 60px;
     margin-top: 20px;
 }
 
 .pj1-2 .title1,
 .pj2-2 .title1,
 .pj3-2 .title1 {
-    font-family: 標楷體;
+    font-family: 'Noto Serif TC', serif;
     font-size: 20px;
 }
 
 .text1 {
     margin-top: 10px;
+    font-family: 'Noto Serif TC', serif;
 }
 
 .text2 {
@@ -518,18 +524,16 @@ main {
 }
 
 .photo1 {
-    width: 300px;
+    width: 350px;
     height: 200px;
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
     overflow: hidden;
 }
 
 .pj2 {
-    border-style: dashed;
     display: flex;
-
     border-radius: 30px;
     width: 100%;
     margin-bottom: 50px;
@@ -546,7 +550,7 @@ main {
 }
 
 .photo2 {
-    width: 300px;
+    width: 350px;
     height: 200px;
     margin-left: -30px;
     margin-top: 10px;
@@ -555,28 +559,27 @@ main {
 }
 
 .pj3 {
-    border-style: dashed;
+    /*border-style: dashed;*/
     display: flex;
-
     border-radius: 30px;
     width: 100%;
     margin-bottom: 50px;
 }
 
 .pj3-1 {
-    width: 30%;
+    width: 50%;
 }
 
 .pj3-2 {
-    width: 60%;
-    margin-left: 60px;
+    width: 50%;
+    margin-left: 70px;
     margin-top: 10px;
 }
 
 .photo3 {
-    width: 250px;
-    height: 200px;
-    margin-left: 30px;
+    width: 370px;
+    height: 250px;
+    margin-left: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
     overflow: hidden;
@@ -602,4 +605,12 @@ main {
 .pro1 {
     margin-top: 60px;
     padding-bottom: 30px;
+}
+
+.text2 a {
+    color: black;
+}
+
+.text2 a:hover {
+    color: #723d46;
 }
