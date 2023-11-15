@@ -22,7 +22,7 @@ nav {
 }
 
 nav a {
-    color: black;
+    color: #4a4e69;
     padding: 14px 16px;
     display: inline-block;
     font-family: Comic Sans MS;
@@ -146,6 +146,7 @@ main {
 
 .r1 {
     display: flex;
+    color: #432818;
 }
 
 .r3 {
@@ -185,6 +186,7 @@ main {
     margin-left: -18px;
     margin-top: 10px;
     margin-bottom: 20px;
+    color: #432818;
 }
 
 .circle-wrap {
@@ -239,7 +241,7 @@ main {
 .mask .fill-3,
 .mask .fill-4 {
     clip: rect(0px, 75px, 150px, 0px);
-    background-color: #285e72;
+    background-color: #a9927d;
 }
 
 .mask.full-1,
@@ -333,6 +335,7 @@ h3 {
     border-radius: 30px;
     font-family: 'Noto Serif TC', serif;
     margin: 48px 0;
+    color: #432818;
 }
 
 .skillsbar li::before,
@@ -374,36 +377,36 @@ h3 {
 @keyframes video {
     from {
         width: 0%;
-        background-color: #d9ae94;
+        background-color: #a9927d;
     }
 
     to {
         width: 85%;
-        background-color: #797d62;
+        background-color: #5e503f;
     }
 }
 
 @keyframes word1 {
     from {
         width: 0%;
-        background-color: #e0b1cb;
+        background-color: #a9927d;
     }
 
     to {
         width: 70%;
-        background-color: #9f86c0;
+        background-color: #5e503f;
     }
 }
 
 @keyframes ppt {
     from {
         width: 0%;
-        background-color: #79a8a9;
+        background-color: #a9927d
     }
 
     to {
         width: 80%;
-        background-color: #3b8686;
+        background-color: #5e503f;
     }
 }
 
@@ -453,6 +456,14 @@ h3 {
     font-family: 'Noto Serif TC', serif;
     text-align: center;
     margin-bottom: 3px;
+    color: #432818;
+}
+
+.s1 li,
+.s2 li,
+.s3 li,
+.s4 li {
+    color: #003554;
 }
 
 .card5 {
@@ -512,11 +523,13 @@ h3 {
 .pj3-2 .title1 {
     font-family: 'Noto Serif TC', serif;
     font-size: 20px;
+    color: #432818;
 }
 
 .text1 {
     margin-top: 10px;
     font-family: 'Noto Serif TC', serif;
+    color: #003554;
 }
 
 .text2 {
@@ -559,7 +572,6 @@ h3 {
 }
 
 .pj3 {
-    /*border-style: dashed;*/
     display: flex;
     border-radius: 30px;
     width: 100%;
@@ -608,7 +620,7 @@ h3 {
 }
 
 .text2 a {
-    color: black;
+    color: #4a4e69;
 }
 
 .text2 a:hover {
